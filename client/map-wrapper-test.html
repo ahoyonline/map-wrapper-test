@@ -1,0 +1,42 @@
+<head>
+  <title>map-wrapper-test</title>
+</head>
+
+<body>
+  <h1>MapWrapper Test</h1>
+  {{>foo}}
+  {{ >map_adapter }}
+  {{ >object_browser }}
+  {{ >map_data_viewer }}
+</body>
+
+<template name="map_adapter">
+  <div class="map-wrapper-container">
+  	{{ >mapWrapper mapData=mapData options=options listener=listener}}
+	  <div class="buttons_bar">
+	  	<button class="add_new_line">Add new line</button>
+	  	<button class="add_marker">Add marker</button>
+	  	<button class="load_objects">Load objects</button>
+	  	<button class="clear_all">Clear all</button>
+	  </div>
+  </div>
+</template>
+
+<template name="object_browser">
+	<div class="object_browser">
+		<div class="polylines_list">
+		</div>
+		<div class="markers_list">
+		</div>
+	</div>
+</template>
+
+<template name="map_data_viewer">
+	<div class="map_data_viewer">
+		{{> jsonView json=mapData }}
+	</div>
+</template>
+
+<template name="foo">
+	<h1>{{ user }}</h1>
+</template>

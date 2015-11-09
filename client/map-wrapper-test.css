@@ -1,0 +1,24 @@
+/* CSS declarations go here */
+.map-wrapper-container {
+	width: 800px;
+	height: 600px;
+	display: inline-block;
+	float: left;
+}
+
+.map-wrapper-container .buttons_bar {
+	padding: 5px;
+}
+
+.map_data_viewer {
+	background: #000;
+	color: #0F0;
+	height: 600px;
+	width: 360px;
+	display: inline-block;
+	overflow: auto;
+}
+
+.map_data_viewer pre {
+	padding: 5px;
+}
