@@ -49,7 +49,8 @@ Template.map_adapter.helpers({
     return function(newMapData, type, index) {
       mapDataReactive.set(newMapData);
     };
-  }
+  },
+  userId: Meteor.userId
 });
 
 Template.map_adapter.events({

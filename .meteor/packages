@@ -22,3 +22,7 @@ ahoy:map-wrapper
 ahoy:map-wrapper-google
 reactive-var
 yasinuslu:json-view
+accounts-ui
+accounts-google
+accounts-twitter
+accounts-password

@@ -3,6 +3,7 @@
 </head>
 
 <body>
+  {{>loginButtons}}
   <h1>MapWrapper Test</h1>
   {{>foo}}
   {{ >map_adapter }}
@@ -12,7 +13,7 @@
 
 <template name="map_adapter">
   <div class="map-wrapper-container">
-  	{{ >mapWrapper mapData=mapData options=options listener=listener}}
+  	{{ >mapWrapper mapData=mapData options=options listener=listener userId=userId}}
 	  <div class="buttons_bar">
 	  	<button class="add_new_line">Add new line</button>
 	  	<button class="add_marker">Add marker</button>
